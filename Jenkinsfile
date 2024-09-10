@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main' credentialsId: 'github', url: 'https://github.com/Deepajagadish/Mission.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/Deepajagadish/Mission.git'
             }
         }
         stage('Compile') {
